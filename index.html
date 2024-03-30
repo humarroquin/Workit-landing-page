@@ -14,16 +14,31 @@
     <title>Frontend Mentor | Workit landing page</title>
   </head>
   <body>
-    <header class="header container">
-      <img src="/assets/images/logo-light.svg" alt="workit logo" class="logo" />
-      <button class="btn btn--secondary">Apply for access</button>
+    <header class="header">
+      <div class="container container--header">
+        <img
+          src="/assets/images/logo-light.svg"
+          alt="workit logo"
+          class="header__logo logo"
+        />
+        <button class="btn btn--secondary">Apply for access</button>
+      </div>
     </header>
-    <main class="container">
-      <section class="hero">
-        <h1 class="hero-title">Data tailored to your needs.</h1>
-        <button class="btn btn--primary">Learn more</button>
+    <main class="main">
+      <section class="hero-section">
+        <div class="container container--hero">
+          <h1 class="hero-section__title heading-lg">
+            Data tailored to your needs.
+          </h1>
+          <button class="hero-section__btn btn btn--primary">Learn more</button>
+          <img
+            src="/assets/images/image-hero.webp"
+            alt=""
+            class="hero-section__img"
+          />
+        </div>
       </section>
-      <section class="features">
+      <section class="features-section">
         <!-- feature 1 -->
         <div class="feature">
           <span class="number">1</span>
@@ -54,7 +69,7 @@
           </p>
         </div>
       </section>
-      <section class="about">
+      <section class="about-section">
         <img src="/assets/images/image-founder.webp" alt="" />
         <div class="about-wrapper">
           <h2 class="about-title">Be the first to test</h2>
@@ -68,7 +83,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-section">
       <img src="/assets/images/logo-dark.svg" alt="workit logo" />
       <div class="socials">
         <img src="/assets/images/icon-facebook.svg" alt="Facebook logo" />

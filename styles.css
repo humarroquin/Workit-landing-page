@@ -84,7 +84,14 @@ h6 {
 /* containers */
 .container {
   max-width: 69.625rem;
-  margin: 0 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* logo */
+.logo {
+  width: 5.985rem;
+  height: 1.538rem;
 }
 
 /* PAGE STYLING */
@@ -95,20 +102,58 @@ body {
   line-height: 32px;
 }
 
+/* header */
 .header {
   background: var(--bg-dark-purle);
+}
+
+.container--header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
-  padding: 2rem 1rem 1rem;
+  padding-top: 2rem;
 }
 
-.header .logo {
-  width: 5.985rem;
-  height: 1.538rem;
+/* hero */
+.hero-section {
+  background: var(--bg-dark-purle);
+  position: relative;
+  margin-bottom: 16.562rem;
+  position: relative;
 }
 
+.hero-section::after {
+  content: '';
+  height: 10rem;
+  width: 100%;
+  background: url(/assets/images/wave.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -9rem;
+}
+
+.container--hero {
+  text-align: center;
+}
+
+.hero-section__title {
+  color: var(--fc-white);
+  padding: 3.437rem 0 2.312rem 0;
+}
+
+.hero-section__btn {
+  margin-bottom: 20.312rem;
+}
+
+.hero-section__img {
+  height: 27.562rem;
+  width: 47.937rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
 /* COMPONENTS */
 
 /* button components */
