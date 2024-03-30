@@ -1,0 +1,140 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@0,9..144;1,9..144&family=Manrope:wght@200..800&display=swap');
+
+/* Josh Comeau's Custom CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --bg-dark-purle: hsl(273, 85%, 13%);
+  --bg-eucaplyptus: hsl(150, 100%, 63%);
+  --bg-davys-gray: hsl(271, 12%, 34%);
+  --bg-ghost-white: hsl(274, 100%, 99%);
+  --bg-white: hsl(0, 0%, 100%);
+
+  --ff-headigs: 'Fraunces', serif;
+  --ff-body: 'Manrope', sans-serif;
+  --fc-dark-purle: hsl(273, 85%, 13%);
+  --fc-Eucaplyptus: hsl(150, 100%, 63%);
+  --fc-white: hsl(0, 0%, 100%);
+}
+
+/* REUSABLE CLASSES */
+
+/* headings */
+.heading-lg {
+  font-family: var(--ff-headigs);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.heading-md {
+  font-family: var(--ff-headigs);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 64;
+}
+
+.heading-sm {
+  font-family: var(--ff-headigs);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+/* containers */
+.container {
+  max-width: 69.625rem;
+  margin: 0 1rem;
+}
+
+/* PAGE STYLING */
+body {
+  font-family: var(--ff-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--fc-dark-purle);
+  line-height: 32px;
+}
+
+/* COMPONENTS */
+
+/* button components */
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  padding: 0.5rem 1.5rem;
+  background: var(--bg-eucaplyptus);
+  color: var(--fc-dark-purle);
+  transition: all 0.3s;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  padding: 0.5rem 1.5rem;
+  background: var(--bg-dark-purle);
+  color: var(--fc-eucaplyptus);
+  outline: 1px solid var(--bg-eucaplyptus);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--fc-white);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btn--secondary::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  color: var(--bg-eucaplyptus);
+}
+
+.btn--seconday:hover,
+.btn--seconday:active {
+  color: var(--fc-eucaplyptus);
+}
