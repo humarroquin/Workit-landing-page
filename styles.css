@@ -259,14 +259,16 @@ body {
   color: var(--fc-white);
   position: relative;
   transition: all 0.3s;
+  padding-bottom: 0.2rem;
 }
 
 .btn--secondary::after {
   content: '';
-  display: block;
   position: absolute;
   height: 3px;
-  width: 124px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   background: var(--bg-eucaplyptus);
 }
 
