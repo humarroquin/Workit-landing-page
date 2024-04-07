@@ -90,7 +90,7 @@ h6 {
 
 /* containers */
 .container {
-  max-width: 69.625rem;
+  max-width: 69.5rem;
   margin: 0 auto;
   padding-inline: 1rem;
 }
@@ -188,7 +188,7 @@ body {
   color: var(--white);
   text-align: center;
 
-  padding: 2rem;
+  padding: 1.9375rem;
   margin-top: -3.25rem;
   position: relative;
   z-index: 1;
@@ -267,7 +267,7 @@ body {
 }
 
 /* media queries */
-@media (min-width: 48em) {
+@media (min-width: 30em) {
   .container {
     padding-inline: 2.4375rem;
   }
@@ -297,5 +297,44 @@ body {
   .feature .number {
     flex-shrink: 0;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .container--features {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 70rem;
+    gap: 1.625rem;
+  }
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-wrapper {
+    max-width: 32.125rem;
+    margin-left: auto;
+    margin-top: -8rem;
+    text-align: left;
+    padding: 3.5rem;
+  }
+  .about-section__img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 50rem) {
+  .about-section__img {
+    width: 100%;
+    max-width: 29.8125rem;
+  }
+  .about-wrapper {
+    max-width: 42.5rem;
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .about-wrapper {
+    margin-top: -18rem;
   }
 }
