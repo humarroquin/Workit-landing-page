@@ -173,9 +173,7 @@ body {
 }
 
 .hero-section__img {
-  /* !Check again */
-  width: min(40rem, 90%);
-
+  width: min(32.125rem, 86%);
   position: absolute;
   top: var(--space-hero-img);
   left: 50%;
@@ -207,7 +205,7 @@ body {
 }
 
 .features-section__heading {
-  margin-bottom: 1.625rem;
+  margin-bottom: 1rem;
 }
 
 .container--features {
@@ -222,9 +220,7 @@ body {
 
 .about-section__img {
   margin: 0 auto;
-
-  /* !Check again */
-  width: min(29.8125rem, 90%);
+  width: 17.5625rem;
 }
 
 .about-section__content {
@@ -299,18 +295,17 @@ body {
 }
 
 /* media queries */
-@media (min-width: 30em) {
+@media (min-width: 25em) {
   .container {
     padding-inline: 2.4375rem;
   }
   /* hero */
   .hero-section__title {
-    max-width: 30rem;
+    max-width: 32rem;
     margin: 0 auto 2.5rem;
   }
   /* features */
   .features-section {
-    padding-bottom: 6.25rem;
     text-align: left;
   }
   .feature {
@@ -321,24 +316,29 @@ body {
     max-width: 35.8126rem;
     margin: 0 auto;
   }
-  .feature .number {
+  .feature__number {
     flex-shrink: 0;
     margin-bottom: 0;
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   .container--features {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 70rem;
     gap: 1.625rem;
   }
+  /* hero */
+  .hero-section__img {
+    width: min(47rem, 67%);
+  }
+  /* features */
   .feature {
     flex-direction: column;
     text-align: center;
   }
-  .about-wrapper {
-    max-width: 32.125rem;
+  /* about */
+  .about-section__content {
+    width: min(45.625rem, 70%);
     margin-left: auto;
     margin-top: -8rem;
     text-align: left;
@@ -349,15 +349,16 @@ body {
   }
 }
 
-@media (min-width: 50rem) {
-  .about-wrapper {
-    max-width: 65%;
-    padding: 4rem;
+@media (min-width: 62.5rem) {
+  /* about */
+  .about-section__content {
+    width: min(45.625rem, 63%);
+    margin-top: -20rem;
   }
-}
-
-@media (min-width: 60rem) {
-  .about-wrapper {
-    margin-top: -18rem;
+  .about-section__content .display-block {
+    display: block;
+  }
+  .about-section__img {
+    width: 29.8125rem;
   }
 }
