@@ -268,11 +268,34 @@ body {
 
 /* media queries */
 @media (min-width: 48em) {
+  .container {
+    padding-inline: 2.4375rem;
+  }
+  /* hero */
   .hero-section__title {
     max-width: 30rem;
     margin: 0 auto 2.5rem;
   }
-  .container {
-    padding-inline: 2.4375rem;
+  .hero-section__img {
+    height: 18.5rem;
+    width: 32.125rem;
+  }
+  /* features */
+  .features-section {
+    padding-top: 12.75rem;
+    padding-bottom: 6.25rem;
+    text-align: left;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    max-width: 35.8126rem;
+    margin: 0 auto;
+  }
+  .feature .number {
+    flex-shrink: 0;
+    margin-bottom: 0;
   }
 }
