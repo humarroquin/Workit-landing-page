@@ -110,6 +110,23 @@ h6 {
   margin: 0 auto;
 }
 
+/* text decoration */
+.underlined-text {
+  position: relative;
+  padding-bottom: 0.2rem;
+  padding-inline: 0;
+}
+
+.underlined-text::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: var(--eucaplyptus);
+}
+
 /* PAGE STYLES */
 body {
   font-family: var(--ff-body);
@@ -148,7 +165,11 @@ body {
 .hero-section__title {
   color: var(--white);
   margin-bottom: 2.5rem;
-  line-height: 1;
+  line-height: 1.1;
+}
+
+.underlined-text--hero {
+  padding: 0;
 }
 
 .hero-section__img {
@@ -269,20 +290,7 @@ body {
 .btn--secondary {
   background: transparent;
   color: var(--white);
-  position: relative;
   transition: all 0.3s;
-  padding-bottom: 0.2rem;
-  padding-inline: 0;
-}
-
-.btn--secondary::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background: var(--eucaplyptus);
 }
 
 .btn--secondary:hover,
