@@ -158,7 +158,6 @@ body {
 .hero-section {
   text-align: center;
   background: var(--dark-purle);
-  position: relative;
   padding: 4rem 0 var(--space-hero-bottom) 0;
 }
 
@@ -175,7 +174,7 @@ body {
 .hero-section__img {
   width: min(32.125rem, 86%);
   position: absolute;
-  top: var(--space-hero-img);
+  top: 24rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -299,11 +298,13 @@ body {
   .container {
     padding-inline: 2.4375rem;
   }
+
   /* hero */
   .hero-section__title {
     max-width: 32rem;
     margin: 0 auto 2.5rem;
   }
+
   /* features */
   .features-section {
     text-align: left;
@@ -312,7 +313,6 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
-
     max-width: 35.8126rem;
     margin: 0 auto;
   }
@@ -327,15 +327,23 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.625rem;
   }
+
   /* hero */
   .hero-section__img {
-    width: min(47rem, 67%);
+    width: min(47rem, 65%);
   }
+
   /* features */
   .feature {
     flex-direction: column;
     text-align: center;
   }
+
+  /* hero image */
+  .hero-section__img {
+    top: 26rem;
+  }
+
   /* about */
   .about-section__content {
     width: min(45.625rem, 70%);
@@ -349,7 +357,30 @@ body {
   }
 }
 
-@media (min-width: 62.5rem) {
+@media (min-width: 50em) {
+  /* bg decorations */
+  .hero-section {
+    background-image: url(/assets/images/bg-pattern-1.svg),
+      url(/assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -14rem top 0, right -5rem top 10rem;
+  }
+
+  .about-section__content {
+    position: relative;
+  }
+  .about-section__content::after {
+    content: '';
+    background: url(/assets/images/bg-pattern-3.svg);
+    height: 212px;
+    width: 221px;
+    position: absolute;
+    right: 2rem;
+    bottom: -5rem;
+  }
+}
+
+@media (min-width: 62.5em) {
   /* about */
   .about-section__content {
     width: min(45.625rem, 63%);
@@ -360,5 +391,13 @@ body {
   }
   .about-section__img {
     width: 29.8125rem;
+  }
+  /* hero decoration */
+  .hero-section {
+    background-position: left -9rem top 0, right -3rem top 10rem;
+  }
+  /* hero image */
+  .hero-section__img {
+    top: 30rem;
   }
 }
