@@ -67,12 +67,12 @@ h6 {
   --space-header: clamp(2rem, 1.5714rem + 2.1429vi, 3.5rem);
 
   /* 157px → 326px */
-  --space-hero-bottom: clamp(9.8125rem, 6.7946rem + 15.0893vi, 20.375rem);
+  --space-hero-bottom: clamp(9.8125rem, 6.7946rem + 15.0893vi, 13.375rem);
   /* 323px → 363px */
   --space-hero-img: clamp(20.1875rem, 19.4732rem + 3.5714vi, 22.6875rem);
 
   /* 152px → 255px */
-  --space-features-top: clamp(9.5rem, 7.6607rem + 9.1964vi, 15.9375rem);
+  --space-features-top: clamp(12.5rem, 7.6607rem + 9.1964vi, 20.9375rem);
   /* 72px → 171px */
   --space-features-bottom: clamp(4.5rem, 2.7321rem + 8.8393vi, 3.6875rem);
 
@@ -211,7 +211,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
+  margin: 5rem auto 1.5rem;
 }
 
 .features-section__heading {
