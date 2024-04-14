@@ -48,7 +48,7 @@ h6 {
   --dark-purle: hsl(273, 85%, 13%);
   --eucaplyptus: hsl(150, 100%, 63%);
   --davys-gray: hsl(271, 12%, 34%);
-  --ghost-white: hsl(274, 100%, 99%);
+  --ghost-white: hsl(276, 100%, 99%);
   --white: hsl(0, 0%, 100%);
 
   --ff-headings: 'Fraunces', serif;
@@ -74,7 +74,7 @@ h6 {
   /* 152px → 255px */
   --space-features-top: clamp(9.5rem, 7.6607rem + 9.1964vi, 15.9375rem);
   /* 72px → 171px */
-  --space-features-bottom: clamp(4.5rem, 2.7321rem + 8.8393vi, 10.6875rem);
+  --space-features-bottom: clamp(4.5rem, 2.7321rem + 8.8393vi, 3.6875rem);
 
   /* 74px → 122px */
   --space-footer-top: clamp(4.625rem, 3.7679rem + 4.2857vi, 7.625rem);
@@ -186,6 +186,17 @@ body {
   padding-bottom: var(--space-features-bottom);
   background: var(--ghost-white);
   text-align: center;
+  position: relative;
+}
+
+.features-section::after {
+  content: '';
+  background: url(/assets/images/wave.svg) no-repeat;
+  height: 15rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .feature__number {
@@ -215,6 +226,17 @@ body {
 /* about */
 .about-section {
   padding-top: 6.25rem;
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  background: url(/assets/images/wave-white.svg) no-repeat;
+  height: 25rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .about-section__img {
@@ -354,6 +376,9 @@ body {
   }
   .about-section__img {
     margin: 0;
+  }
+  .about-section {
+    padding-top: 15rem;
   }
 }
 
