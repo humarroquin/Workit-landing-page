@@ -216,6 +216,7 @@ body {
 
 .features-section__heading {
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .container--features {
@@ -335,7 +336,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
-    max-width: 35.8126rem;
+    max-width: 36rem;
     margin: 0 auto;
   }
   .feature__number {
